@@ -59,9 +59,9 @@ const Navbar = props => {
         display="flex"
         p={2}
         maxW="container.md"
-        wrap="wrap"
-        align="center"
-        justify="space-between"
+        alignItems="center"
+        justifyContent="space-between"
+        minH="60px"
       >
         <Flex align="center" mr={5}>
           <Heading as="h1" size="lg" letterSpacing={'tighter'}>
@@ -76,27 +76,21 @@ const Navbar = props => {
           alignItems="center"
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
+          spacing={6}
+          justify="center"
         >
-          <LinkItem href="/works" path={path}>
-            Works
+          <LinkItem href="/cv.pdf" target="_blank">
+            Download CV
           </LinkItem>
-          <LinkItem href="https://store.craftz.dog/" path={path}>
-            Wallpapers
+          <LinkItem href="https://scholar.google.com/citations?hl=fr&user=mXtBHFAAAAAJ" target="_blank">
+            Google Scholar
           </LinkItem>
-          <LinkItem href="/posts" path={path}>
-            Posts
-          </LinkItem>
-          <LinkItem href="https://uses.craftz.dog/">Uses</LinkItem>
           <LinkItem
             target="_blank"
-            href="https://github.com/craftzdog/craftzdog-homepage"
+            href="https://github.com/Tibogoss/tibogoss-homepage"
             path={path}
-            display="inline-flex"
-            alignItems="center"
-            style={{ gap: 4 }}
-            pl={2}
           >
-            <IoLogoGithub />
+            <IoLogoGithub style={{ marginRight: '4px', display: 'inline' }} />
             Source
           </LinkItem>
         </Stack>
@@ -116,21 +110,15 @@ const Navbar = props => {
                 <MenuItem as={MenuLink} href="/">
                   About
                 </MenuItem>
-                <MenuItem as={MenuLink} href="/works">
-                  Works
+                <MenuItem as={Link} href="/cv.pdf" target="_blank">
+                  Download CV
                 </MenuItem>
-                <MenuItem as={MenuLink} href="https://store.craftz.dog/">
-                  Wallpapers
-                </MenuItem>
-                <MenuItem as={MenuLink} href="/posts">
-                  Posts
-                </MenuItem>
-                <MenuItem as={MenuLink} href="https://uses.craftz.dog/">
-                  Uses
+                <MenuItem as={Link} href="https://scholar.google.com/citations?hl=fr&user=mXtBHFAAAAAJ" target="_blank">
+                  Google Scholar
                 </MenuItem>
                 <MenuItem
                   as={Link}
-                  href="https://github.com/craftzdog/craftzdog-homepage"
+                  href="https://github.com/Tibogoss/tibogoss-homepage"
                 >
                   View Source
                 </MenuItem>

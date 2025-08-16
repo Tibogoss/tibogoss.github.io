@@ -4,21 +4,21 @@ import {
   Container,
   Heading,
   Box,
-  SimpleGrid,
-  Button,
   List,
   ListItem,
+  Button,
+  Text,
+  Flex,
   useColorModeValue
 } from '@chakra-ui/react'
-import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons'
+import { EmailIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import { GridItem } from '../components/grid-item'
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
-import thumbYouTube from '../public/images/links/youtube.png'
-import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
+import { IoLogoLinkedin, IoLogoGithub, IoSchool } from 'react-icons/io5'
+// Add your own project thumbnails here
+// import thumbProject1 from '../public/images/[your-project-image]'
 import Image from 'next/image'
 
 const Home = () => (
@@ -32,15 +32,17 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello, I&apos;m an indie app developer based in Japan!
+        Looking for a Research Engineer position to help saving lives one day!
       </Box>
 
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
-            Takuya Matsuyama
+            Thibaud Southiratn
           </Heading>
-          <p>Digital Craftsman ( Artist / Developer / Designer )</p>
+          <Text color="teal.500" fontWeight="semibold">
+            MSc. & MEng. (AI / Computer Science / Bioinformatics)
+          </Text>
         </Box>
         <Box
           flexShrink={0}
@@ -59,7 +61,7 @@ const Home = () => (
             overflow="hidden"
           >
             <Image
-              src="/images/takuya.jpg"
+              src="/images/thibaud.jpeg"
               alt="Profile image"
               width="100"
               height="100"
@@ -73,38 +75,12 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
-          Takuya is a freelance and a full-stack developer based in Osaka with a
-          passion for building digital services/stuff he wants. He has a knack
-          for all things launching products, from planning and designing all the
-          way to solving real-life problems with code. When not online, he loves
-          hanging out with his camera. Currently, he is living off of his own
-          product called{' '}
-          <Link as={NextLink} href="/works/inkdrop" passHref scroll={false}>
-            Inkdrop
-          </Link>
-          . He publishes content for marketing his products and his YouTube
-          channel called &quot;
-          <Link
-            as={NextLink}
-            href="https://www.youtube.com/devaslife"
-            passHref
-            target="_blank"
-          >
-            Dev as Life
-          </Link>
-          &quot; has more than 100k subscribers.
+          Freshly graduated engineer <Text as="span" color="blue.400" fontWeight="semibold">based in Paris</Text> with an interest in leveraging AI for health-related problems.
+          I am driven by the potential of technology to make a positive impact on people's lives.
+          
+          Currently working on better ways to identify target/property agnostic - and synthesizable -
+          small molecules.
         </Paragraph>
-        <Box align="center" my={4}>
-          <Button
-            as={NextLink}
-            href="/works"
-            scroll={false}
-            rightIcon={<ChevronRightIcon />}
-            colorScheme="teal"
-          >
-            My portfolio
-          </Button>
-        </Box>
       </Section>
 
       <Section delay={0.2}>
@@ -112,129 +88,198 @@ const Home = () => (
           Bio
         </Heading>
         <BioSection>
-          <BioYear>1984</BioYear>
-          Born in Osaka (大阪), Japan.
+          <BioYear>2021 - 2025</BioYear>
+          Graduating from a dual-degree program with Seoul National University (MSc.) and Télécom SudParis (MEng. "Diplôme d'Ingénieur") in Computer Science.
+          Focused on AI for Biomedicine and Cheminformatics.
+          My thesis work was published in <Text as="span" color="red.500" fontWeight="semibold">ICML'25</Text>.
         </BioSection>
         <BioSection>
-          <BioYear>2010</BioYear>
-          Completed the Master&apos;s Program in the Graduate School of
-          Information Science at Nara Institute of Science and Technology
-          (奈良先端科学技術大学院大学情報科学研究科修士課程)
+          <BioYear>2018 - 2021</BioYear>
+          Prepared for the French "Grandes Écoles" entrance exams.
+          Got strong foundations in <Text as="span" color="green.400" fontWeight="semibold">Mathematics, Physics, and Chemistry</Text>.
         </BioSection>
         <BioSection>
-          <BioYear>2010</BioYear>
-          Worked at Yahoo! Japan (ヤフー株式会社入社)
+          <BioYear>2018</BioYear>
+          Graduated from high-school with highest honors (Scientific track).
         </BioSection>
         <BioSection>
-          <BioYear>2012 to present</BioYear>
-          Working as a freelancer
+          <BioYear>2002</BioYear>
+          Born in Bourg-la-Reine, France.
+          
         </BioSection>
       </Section>
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-          I ♥
+          Publications
+        </Heading>
+        <Box mb={4}>
+          <Flex justify="space-between" align="flex-start" mb={2}>
+            <Text fontWeight="semibold" flex="1" pr={4}>
+              CombiMOTS: Combinatorial Multi-Objective Tree Search for Dual-Target Molecule Generation
+            </Text>
+            <Flex align="center" gap={2}>
+              <Text fontSize="sm" color="red.500" fontWeight="semibold">ICML'25</Text>
+              <Link href="https://github.com/Tibogoss/CombiMOTS" target="_blank">
+                <IoLogoGithub size="16" color="#333" />
+              </Link>
+            </Flex>
+          </Flex>
+          <Text fontSize="sm" color="gray.600">
+            <Text as="span" fontWeight="semibold">Thibaud Southiratn</Text>, Bonil Koo, Yijingxiu Lu, Sun Kim
+          </Text>
+        </Box>
+        <Box mb={4}>
+          <Flex justify="space-between" align="flex-start" mb={2}>
+            <Text fontWeight="semibold" flex="1" pr={4}>
+              Web-based Exploratory Data Mining System for Analyzing the Gene-level Relationship between Intratumoral Heterogeneity of Promoter DNA Methylation and Drug Response
+            </Text>
+            <Flex align="center" gap={2}>
+              <Text fontSize="sm" color="red.500" fontWeight="semibold">2024 KCC</Text>
+            </Flex>
+          </Flex>
+          <Text fontSize="sm" color="gray.600">
+            Tae Hoon Kweon, Bonil Koo, Sungjoon Park, <Text as="span" fontWeight="semibold">Thibaud Southiratn</Text>, Sun Kim
+          </Text>
+        </Box>
+      </Section>
+
+      <Section delay={0.4}>
+        <Heading as="h3" variant="section-title">
+          Projects
+        </Heading>
+        <Box mb={4}>
+          <Flex justify="space-between" align="flex-start" mb={2}>
+            <Text fontWeight="semibold" flex="1" pr={4}>
+              Selective CDK7 Inhibitor Generation
+            </Text>
+            <Link href="https://github.com/Tibogoss/KinSel" target="_blank">
+              <IoLogoGithub size="16" color="#333" />
+            </Link>
+          </Flex>
+          <Text fontSize="sm" color="blue.500" fontWeight="semibold" mb={2}>
+            PARETO OPTIMIZATION • MONTE-CARLO TREE SEARCH • PROPERTY PREDICTION
+          </Text>
+          <Text fontSize="sm" mb={1}>
+            • Adapted CombiMOTS to attempt unveiling molecules biochemically active to CDK7 & inactive to CDK1-2-5-9-12-13.
+          </Text>
+          <Text fontSize="sm">
+            • Identified potent candidates with motifs/warheads (acrylamide, chloroacetamide) found in relevant literature.
+          </Text>
+        </Box>
+        <Box mb={4}>
+          <Flex justify="space-between" align="flex-start" mb={2}>
+            <Text fontWeight="semibold" flex="1" pr={4}>
+              Efficient Molecule Captioning
+            </Text>
+            <Link href="https://github.com/Tibogoss/FasText-ChemT5" target="_blank">
+              <IoLogoGithub size="16" color="#333" />
+            </Link>
+          </Flex>
+          <Text fontSize="sm" color="blue.500" fontWeight="semibold" mb={2}>
+            TRANSFORMERS • CHEMICAL LANGUAGE MODELS
+          </Text>
+          <Text fontSize="sm" mb={1}>
+            • Fine-tuned a Chemical LM (Text+ChemT5) to improve performance (up to +5.4%) on the "mol2text" task.
+          </Text>
+          <Text fontSize="sm">
+            • Adapted an implementation of Speculative Decoding to infer captions faster (+36.5%) without changing output distribution.
+          </Text>
+        </Box>
+      </Section>
+
+      <Section delay={0.5}>
+        <Heading as="h3" variant="section-title">
+          How I spend my time
         </Heading>
         <Paragraph>
-          Art, Music,{' '}
-          <Link href="https://illust.odoruinu.net/" target="_blank">
-            Drawing
-          </Link>
-          , Playing Drums,{' '}
-          <Link href="https://500px.com/p/craftzdog" target="_blank">
-            Photography
-          </Link>
-          , Leica, Machine Learning
+        Photography for creativity (yes it's cliché), gaming to remain competitive and working out to stay in shape!
         </Paragraph>
       </Section>
 
-      <Section delay={0.3}>
+      <Section delay={0.6}>
         <Heading as="h3" variant="section-title">
           On the web
         </Heading>
         <List>
           <ListItem>
-            <Link href="https://github.com/craftzdog" target="_blank">
+            <Link href="https://github.com/Tibogoss" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<IoLogoGithub />}
               >
-                @craftzdog
+                @Tibogoss
               </Button>
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://twitter.com/inkdrop_app" target="_blank">
+            <Link href="https://linkedin.com/in/thibaud-southiratn" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
-                leftIcon={<IoLogoTwitter />}
+                leftIcon={<IoLogoLinkedin />}
               >
-                @inkdrop_app (English)
+                LinkedIn
               </Button>
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://twitter.com/craftzdog" target="_blank">
+            <Link href="https://scholar.google.com/citations?user=[YOUR_USER_ID]" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
-                leftIcon={<IoLogoTwitter />}
+                leftIcon={<IoSchool />}
               >
-                @craftzdog (日本語)
+                Google Scholar
               </Button>
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://instagram.com/craftzdog" target="_blank">
+            <Link href="mailto:southiratn.thibaud@gmail.com">
               <Button
                 variant="ghost"
                 colorScheme="teal"
-                leftIcon={<IoLogoInstagram />}
+                leftIcon={<EmailIcon />}
               >
-                @craftzdog
+                Email
               </Button>
             </Link>
           </ListItem>
         </List>
 
+        {/* Add your own projects here
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
-            href="https://www.youtube.com/devaslife"
-            title="Dev as Life"
-            thumbnail={thumbYouTube}
+            href="[your-project-url]"
+            title="[Your Project Title]"
+            thumbnail={[your-thumbnail]}
           >
-            My YouTube channel (&gt;200k subs)
-          </GridItem>
-          <GridItem
-            href="https://www.inkdrop.app/"
-            title="Inkdrop"
-            thumbnail={thumbInkdrop}
-          >
-            A Markdown note-taking app
+            [Your project description]
           </GridItem>
         </SimpleGrid>
+        */}
 
+        {/* Newsletter section - update with your own newsletter/blog
         <Heading as="h3" variant="section-title">
           Newsletter
         </Heading>
         <p>
-          Join me on a behind-the-scenes coding journey. Weekly updates on
-          projects, tutorials, and videos
+          [Your newsletter description]
         </p>
 
         <Box align="center" my={4}>
           <Button
             as={NextLink}
-            href="https://www.devas.life/"
+            href="[your-newsletter-url]"
             scroll={false}
             leftIcon={<EmailIcon />}
             colorScheme="teal"
           >
-            Sign up my newsletter here
+            [Your CTA text]
           </Button>
         </Box>
+        */}
       </Section>
     </Container>
   </Layout>

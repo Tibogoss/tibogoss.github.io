@@ -12,7 +12,7 @@ const VoxelDog = () => {
   const refContainer = useRef()
   const [loading, setLoading] = useState(true)
   const refRenderer = useRef()
-  const urlDogGLB = (process.env.NODE_ENV === 'production' ? 'https://craftzdog.global.ssl.fastly.net/homepage' : '') + '/dog.glb'
+  const urlDogGLB = '/dog.glb' // Note: You may want to replace the dog.glb with your own 3D model
 
   const handleWindowResize = useCallback(() => {
     const { current: renderer } = refRenderer

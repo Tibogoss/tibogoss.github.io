@@ -1,10 +1,9 @@
-# Thibaud's Homepage
+# Source Code for Tibogoss's personal webpage
 
-[Add your domain here]
-
-## Based on Takuya Matsuyama's Template
+## Credit
 
 This homepage is based on [Takuya's amazing template](https://github.com/craftzdog/craftzdog-homepage).
+If you also want to use this template, you may refer to the original repository and read adequate restrictions!
 
 ## Stack
 

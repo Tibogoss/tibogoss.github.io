@@ -1,4 +1,3 @@
-import NextLink from 'next/link'
 import {
   Link,
   Container,
@@ -76,7 +75,7 @@ const Home = () => (
         </Heading>
         <Paragraph>
           Freshly graduated engineer <Text as="span" color="blue.400" fontWeight="semibold">based in Paris</Text> with an interest in leveraging AI for health-related problems.
-          I am driven by the potential of technology to make a positive impact on people's lives.
+          I am driven by the potential of technology to make a positive impact on people&apos;s lives.
           
           Currently working on better ways to identify target/property agnostic - and synthesizable -
           small molecules.
@@ -89,13 +88,13 @@ const Home = () => (
         </Heading>
         <BioSection>
           <BioYear>2021 - 2025</BioYear>
-          Graduating from a dual-degree program with Seoul National University (MSc.) and Télécom SudParis (MEng. "Diplôme d'Ingénieur") in Computer Science.
+          Graduating from a dual-degree program with Seoul National University (MSc.) and Télécom SudParis (MEng. &quot;Diplôme d&apos;Ingénieur&quot;) in Computer Science.
           Focused on AI for Biomedicine and Cheminformatics.
-          My thesis work was published in <Text as="span" color="red.500" fontWeight="semibold">ICML'25</Text>.
+          My thesis work was published in <Text as="span" color="red.500" fontWeight="semibold">ICML&apos;25</Text>.
         </BioSection>
         <BioSection>
           <BioYear>2018 - 2021</BioYear>
-          Prepared for the French "Grandes Écoles" entrance exams.
+          Prepared for the French &quot;Grandes Écoles&quot; entrance exams.
           Got strong foundations in <Text as="span" color="green.400" fontWeight="semibold">Mathematics, Physics, and Chemistry</Text>.
         </BioSection>
         <BioSection>
@@ -119,7 +118,7 @@ const Home = () => (
               CombiMOTS: Combinatorial Multi-Objective Tree Search for Dual-Target Molecule Generation
             </Text>
             <Flex align="center" gap={2}>
-              <Text fontSize="sm" color="red.500" fontWeight="semibold">ICML'25</Text>
+              <Text fontSize="sm" color="red.500" fontWeight="semibold">ICML&apos;25</Text>
               <Link href="https://github.com/Tibogoss/CombiMOTS" target="_blank">
                 <IoLogoGithub size="16" color="#333" />
               </Link>
@@ -180,7 +179,7 @@ const Home = () => (
             TRANSFORMERS • CHEMICAL LANGUAGE MODELS
           </Text>
           <Text fontSize="sm" mb={1}>
-            • Fine-tuned a Chemical LM (Text+ChemT5) to improve performance (up to +5.4%) on the "mol2text" task.
+            • Fine-tuned a Chemical LM (Text+ChemT5) to improve performance (up to +5.4%) on the &quot;mol2text&quot; task.
           </Text>
           <Text fontSize="sm">
             • Adapted an implementation of Speculative Decoding to infer captions faster (+36.5%) without changing output distribution.
@@ -193,7 +192,7 @@ const Home = () => (
           How I spend my time
         </Heading>
         <Paragraph>
-        Photography for creativity (yes it's cliché), gaming to remain competitive and working out to stay in shape!
+        Photography for creativity (yes it&apos;s cliché), gaming to remain competitive and working out to stay in shape!
         </Paragraph>
       </Section>
 

@@ -1,7 +1,6 @@
-import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
+import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import { WorkGridItem } from '../components/grid-item'
 
 // Import your own project thumbnails here
 // import thumbProject1 from '../public/images/works/[your-project]_eyecatch.png'

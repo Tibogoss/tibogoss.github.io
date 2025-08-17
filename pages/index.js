@@ -88,7 +88,7 @@ const Home = () => (
         </Heading>
         <BioSection>
           <BioYear>2021 - 2025</BioYear>
-          Graduating from a dual-degree program with Seoul National University (MSc.) and Télécom SudParis (MEng. &quot;Diplôme d&apos;Ingénieur&quot;) in Computer Science.
+          Graduating from a dual-degree program with Seoul National University (MSc. at <Link href="https://bhi-kimlab.github.io/" target="_blank"><Text as="span" color="orange.300" fontWeight="semibold">BHI Lab</Text></Link>) and Télécom SudParis (MEng. &quot;Diplôme d&apos;Ingénieur&quot;) in Computer Science.
           Focused on AI for Biomedicine and Cheminformatics.
           My thesis work was published in <Text as="span" color="red.500" fontWeight="semibold">ICML&apos;25</Text>.
         </BioSection>
@@ -114,7 +114,7 @@ const Home = () => (
         </Heading>
         <Box mb={4}>
           <Flex justify="space-between" align="flex-start" mb={2}>
-            <Text fontWeight="semibold" flex="1" pr={4}>
+            <Text fontWeight="semibold" flex="1" pr={4} lineHeight="tall">
               CombiMOTS: Combinatorial Multi-Objective Tree Search for Dual-Target Molecule Generation
             </Text>
             <Flex align="center" gap={2}>
@@ -130,7 +130,7 @@ const Home = () => (
         </Box>
         <Box mb={4}>
           <Flex justify="space-between" align="flex-start" mb={2}>
-            <Text fontWeight="semibold" flex="1" pr={4}>
+            <Text fontWeight="semibold" flex="1" pr={4} lineHeight="tall">
               Web-based Exploratory Data Mining System for Analyzing the Gene-level Relationship between Intratumoral Heterogeneity of Promoter DNA Methylation and Drug Response
             </Text>
             <Flex align="center" gap={2}>
@@ -149,7 +149,7 @@ const Home = () => (
         </Heading>
         <Box mb={4}>
           <Flex justify="space-between" align="flex-start" mb={2}>
-            <Text fontWeight="semibold" flex="1" pr={4}>
+            <Text fontWeight="semibold" flex="1" pr={4} lineHeight="tall">
               Selective CDK7 Inhibitor Generation
             </Text>
             <Link href="https://github.com/Tibogoss/KinSel" target="_blank">
@@ -159,16 +159,16 @@ const Home = () => (
           <Text fontSize="sm" color="blue.500" fontWeight="semibold" mb={2}>
             PARETO OPTIMIZATION • MONTE-CARLO TREE SEARCH • PROPERTY PREDICTION
           </Text>
-          <Text fontSize="sm" mb={1}>
+          <Text fontSize="sm" mb={1} textAlign="justify" lineHeight="tall">
             • Adapted CombiMOTS to attempt unveiling molecules biochemically active to CDK7 & inactive to CDK1-2-5-9-12-13.
           </Text>
-          <Text fontSize="sm">
+          <Text fontSize="sm" textAlign="justify" lineHeight="tall">
             • Identified potent candidates with motifs/warheads (acrylamide, chloroacetamide) found in relevant literature.
           </Text>
         </Box>
         <Box mb={4}>
           <Flex justify="space-between" align="flex-start" mb={2}>
-            <Text fontWeight="semibold" flex="1" pr={4}>
+            <Text fontWeight="semibold" flex="1" pr={4} lineHeight="tall">
               Efficient Molecule Captioning
             </Text>
             <Link href="https://github.com/Tibogoss/FasText-ChemT5" target="_blank">
@@ -178,10 +178,10 @@ const Home = () => (
           <Text fontSize="sm" color="blue.500" fontWeight="semibold" mb={2}>
             TRANSFORMERS • CHEMICAL LANGUAGE MODELS
           </Text>
-          <Text fontSize="sm" mb={1}>
+          <Text fontSize="sm" mb={1} textAlign="justify" lineHeight="tall">
             • Fine-tuned a Chemical LM (Text+ChemT5) to improve performance (up to +5.4%) on the &quot;mol2text&quot; task.
           </Text>
-          <Text fontSize="sm">
+          <Text fontSize="sm" textAlign="justify" lineHeight="tall">
             • Adapted an implementation of Speculative Decoding to infer captions faster (+36.5%) without changing output distribution.
           </Text>
         </Box>

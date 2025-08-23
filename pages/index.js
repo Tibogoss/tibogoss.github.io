@@ -224,7 +224,7 @@ const Home = () => (
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://scholar.google.com/citations?user=[YOUR_USER_ID]" target="_blank">
+            <Link href="https://scholar.google.com/citations?hl=fr&user=mXtBHFAAAAAJ" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"

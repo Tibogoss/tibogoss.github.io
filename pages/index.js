@@ -77,8 +77,12 @@ const Home = () => (
           Freshly graduated engineer <Text as="span" color="blue.400" fontWeight="semibold">based in Paris</Text> with an interest in leveraging AI for health-related problems.
           I am driven by the potential of technology to make a positive impact on people&apos;s lives.
           
-          Currently working on better ways to identify target/property agnostic - and synthesizable -
+          Working on better ways to identify target/property agnostic - and synthesizable -
           small molecules.
+        </Paragraph>
+        <Paragraph>
+          <>Right now, I am a <Text as="span" color="purple.400" fontWeight="semibold">cheminformatics intern </Text> at NovAliX</>, working with the Drug Discovery team. 
+          I am integrating tools for AI-powered ADME prediction and DEL Analysis into the company&apos;s internal pipeline.
         </Paragraph>
       </Section>
 

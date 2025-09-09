@@ -82,7 +82,7 @@ const Home = () => (
         </Paragraph>
         <Paragraph>
           <>Right now, I am a <Text as="span" color="purple.400" fontWeight="semibold">cheminformatics intern </Text> at NovAliX</>, working with the Drug Discovery team. 
-          I am integrating tools for AI-powered ADME prediction and DEL Analysis into the company&apos;s internal pipeline.
+          I am integrating AI-powered tools for ADME prediction and DEL Analysis into the company&apos;s internal pipeline.
         </Paragraph>
       </Section>
 

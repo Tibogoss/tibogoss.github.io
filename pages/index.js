@@ -40,7 +40,7 @@ const Home = () => (
             Thibaud Southiratn
           </Heading>
           <Text color="teal.500" fontWeight="semibold">
-            MSc. & MEng. (AI / Computer Science / Bioinformatics)
+            MSc. & MEng. (AI / Computer Science / Chem+Bio)
           </Text>
         </Box>
         <Box
@@ -149,6 +149,27 @@ const Home = () => (
 
       <Section delay={0.4}>
         <Heading as="h3" variant="section-title">
+          News &amp; Awards
+        </Heading>
+        <Box mb={3}>
+          <Text fontSize="sm" lineHeight="tall">
+            🏆 <Text as="span" color="red.500" fontWeight="semibold">[10/2025]</Text> I ranked 1st in Owkin&apos;s <Link href="https://www.linkedin.com/posts/owkin_day-3-of-the-decoding-biology-hackathon-activity-7379172918863511552-dO9w?utm_source=share&utm_medium=member_desktop&rcm=ACoAADf_NSwBq3Ds5IQY48Vp2WMmj70bJAGAu04" target="_blank" color="blue.400">Decoding Biology Hackathon</Link>!
+          </Text>
+        </Box>
+        <Box mb={3}>
+          <Text fontSize="sm" lineHeight="tall">
+            📰 <Text as="span" color="red.500" fontWeight="semibold">[08/2025]</Text> Graduated from SNU :( See you 서울!
+          </Text>
+        </Box>
+        <Box mb={3}>
+          <Text fontSize="sm" lineHeight="tall">
+            📰 <Text as="span" color="red.500" fontWeight="semibold">[05/2025]</Text> Yaaay!! My first paper got accepted to ICML&apos;25! {'>'} Vancouver gogo 🇨🇦!
+          </Text>
+        </Box>
+      </Section>
+
+      <Section delay={0.5}>
+        <Heading as="h3" variant="section-title">
           Projects
         </Heading>
         <Box mb={4}>
@@ -191,7 +212,7 @@ const Home = () => (
         </Box>
       </Section>
 
-      <Section delay={0.5}>
+      <Section delay={0.6}>
         <Heading as="h3" variant="section-title">
           How I spend my time
         </Heading>
@@ -200,7 +221,7 @@ const Home = () => (
         </Paragraph>
       </Section>
 
-      <Section delay={0.6}>
+      <Section delay={0.7}>
         <Heading as="h3" variant="section-title">
           On the web
         </Heading>

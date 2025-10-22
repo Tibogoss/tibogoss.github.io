@@ -11,6 +11,7 @@ import {
   useColorModeValue
 } from '@chakra-ui/react'
 import { EmailIcon } from '@chakra-ui/icons'
+import Head from 'next/head'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
@@ -22,6 +23,9 @@ import Image from 'next/image'
 
 const Home = () => (
   <Layout>
+    <Head>
+      <meta name="google-site-verification" content="OYxZRZybOq9eZmk-dyIVG8wYDoQJS-5NXMVgcZ62Shk" />
+    </Head>
     <Container>
       <Box
         borderRadius="lg"

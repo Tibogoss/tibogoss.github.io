@@ -135,6 +135,19 @@ const Home = () => (
         <Box mb={4}>
           <Flex justify="space-between" align="flex-start" mb={2}>
             <Text fontWeight="semibold" flex="1" pr={4} lineHeight="tall">
+              Deep Learning vs Classical Methods in Potency & ADME Prediction: Insights from a Computational Blind Challenge
+            </Text>
+            <Flex align="center" gap={2}>
+              <Text fontSize="sm" color="red.500" fontWeight="semibold">ChemRxiv - To appear in JCIM</Text>
+            </Flex>
+          </Flex>
+          <Text fontSize="sm" color="gray.600">
+            Yaelle Fischer, <Text as="span" fontWeight="semibold">Thibaud Southiratn</Text>, Dhoha Triki, Ruel Cedeno
+          </Text>
+        </Box>
+        <Box mb={4}>
+          <Flex justify="space-between" align="flex-start" mb={2}>
+            <Text fontWeight="semibold" flex="1" pr={4} lineHeight="tall">
               Web-based Exploratory Data Mining System for Analyzing the Gene-level Relationship between Intratumoral Heterogeneity of Promoter DNA Methylation and Drug Response
             </Text>
             <Flex align="center" gap={2}>
@@ -151,6 +164,11 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           News &amp; Awards
         </Heading>
+        <Box mb={3}>
+          <Text fontSize="sm" lineHeight="tall">
+            📰 <Text as="span" color="red.500" fontWeight="semibold">[10/2025]</Text> New preprint on Potency & ADME prediction is out !
+          </Text>
+        </Box>
         <Box mb={3}>
           <Text fontSize="sm" lineHeight="tall">
             🏆 <Text as="span" color="red.500" fontWeight="semibold">[10/2025]</Text> I ranked 1st in Owkin&apos;s <Link href="https://www.linkedin.com/posts/owkin_day-3-of-the-decoding-biology-hackathon-activity-7379172918863511552-dO9w?utm_source=share&utm_medium=member_desktop&rcm=ACoAADf_NSwBq3Ds5IQY48Vp2WMmj70bJAGAu04" target="_blank" color="blue.400">Decoding Biology Hackathon</Link>!

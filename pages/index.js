@@ -122,9 +122,11 @@ const Home = () => (
         </Heading>
         <Box mb={4}>
           <Flex justify="space-between" align="flex-start" mb={2}>
-            <Text fontWeight="semibold" flex="1" pr={4} lineHeight="tall">
-              CombiMOTS: Combinatorial Multi-Objective Tree Search for Dual-Target Molecule Generation
-            </Text>
+            <Link href="https://openreview.net/forum?id=FSlTEObdLl" target="_blank" flex="1" pr={4}>
+              <Text fontWeight="semibold" lineHeight="tall" color="blue.400">
+                CombiMOTS: Combinatorial Multi-Objective Tree Search for Dual-Target Molecule Generation
+              </Text>
+            </Link>
             <Flex align="center" gap={2}>
               <Text fontSize="sm" color="red.500" fontWeight="semibold">ICML&apos;25</Text>
               <Link href="https://github.com/Tibogoss/CombiMOTS" target="_blank">
@@ -138,11 +140,13 @@ const Home = () => (
         </Box>
         <Box mb={4}>
           <Flex justify="space-between" align="flex-start" mb={2}>
-            <Text fontWeight="semibold" flex="1" pr={4} lineHeight="tall">
-              Deep Learning vs Classical Methods in Potency & ADME Prediction: Insights from a Computational Blind Challenge
-            </Text>
+            <Link href="https://pubs.acs.org/doi/abs/10.1021/acs.jcim.5c01982" target="_blank" flex="1" pr={4}>
+              <Text fontWeight="semibold" lineHeight="tall" color="blue.400">
+                Deep Learning vs Classical Methods in Potency & ADME Prediction: Insights from a Computational Blind Challenge
+              </Text>
+            </Link>
             <Flex align="center" gap={2}>
-              <Text fontSize="sm" color="red.500" fontWeight="semibold">ChemRxiv - To appear in JCIM</Text>
+              <Text fontSize="sm" color="red.500" fontWeight="semibold">ACS - JCIM</Text>
             </Flex>
           </Flex>
           <Text fontSize="sm" color="gray.600">
@@ -170,7 +174,12 @@ const Home = () => (
         </Heading>
         <Box mb={3}>
           <Text fontSize="sm" lineHeight="tall">
-            📰 <Text as="span" color="red.500" fontWeight="semibold">[10/2025]</Text> New preprint on Potency & ADME prediction is out !
+            📰 <Text as="span" color="red.500" fontWeight="semibold">[12/2025]</Text> The article is live on <Link href="https://pubs.acs.org/doi/abs/10.1021/acs.jcim.5c01982" target="_blank" color="blue.400">JCIM</Link> !
+          </Text>
+        </Box>
+        <Box mb={3}>
+          <Text fontSize="sm" lineHeight="tall">
+            📰 <Text as="span" color="red.500" fontWeight="semibold">[10/2025]</Text> New <Link href="https://chemrxiv.org/engage/chemrxiv/article-details/6908c359ef936fb4a217c384" target="_blank" color="blue.400">preprint</Link> on Potency & ADME prediction is out!
           </Text>
         </Box>
         <Box mb={3}>

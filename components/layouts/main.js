@@ -9,7 +9,7 @@ const Main = ({ children, router }) => {
     <Box as="main" pb={8}>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="AI Research Engineer specializing in Cheminformatics, Drug Discovery, and Biomedicine. MSc from Seoul National University, MEng from Télécom SudParis." />
+        <meta name="description" content="AI for Drug Discovery and Cheminformatics. MSCA PhD student at AstraZeneca and EPFL. Prev: MSc from Seoul National University, MEng from Télécom SudParis." />
         <meta name="keywords" content="Thibaud Southiratn, AI, Cheminformatics, Drug Discovery, Machine Learning, Deep Learning, Seoul National University, Télécom SudParis" />
         <meta name="author" content="Thibaud Southiratn" />
         <link rel="canonical" href="https://tibogoss.github.io/" />
@@ -19,15 +19,15 @@ const Main = ({ children, router }) => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@tibogoss" />
         <meta name="twitter:creator" content="@tibogoss" />
-        <meta name="twitter:description" content="ML Research Engineer specializing in Cheminformatics, Drug Discovery, and Biomedicine. MSc from Seoul National University, MEng from Télécom SudParis." />
+        <meta name="twitter:description" content="AI for Drug Discovery and Cheminformatics. MSCA PhD student at AstraZeneca and EPFL. Prev: MSc from Seoul National University, MEng from Télécom SudParis." />
         <meta name="twitter:image" content="https://tibogoss.github.io/dna_thumbnail.png" />
         <meta property="og:site_name" content="Thibaud Southiratn" />
-        <meta property="og:title" content="Thibaud Southiratn - ML Research Engineer | Portfolio" />
-        <meta property="og:description" content="ML Research Engineer specializing in Cheminformatics, Drug Discovery, and Biomedicine. MSc from Seoul National University, MEng from Télécom SudParis." />
+        <meta property="og:title" content="Thibaud Southiratn | Portfolio" />
+        <meta property="og:description" content="AI for Drug Discovery and Cheminformatics. MSCA PhD student at AstraZeneca and EPFL. Prev: MSc from Seoul National University, MEng from Télécom SudParis." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://tibogoss.github.io/" />
         <meta property="og:image" content="https://tibogoss.github.io/dna_thumbnail.png" />
-        <title>Thibaud Southiratn - ML Research Engineer | Portfolio</title>
+        <title>Thibaud Southiratn | Portfolio</title>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -38,7 +38,7 @@ const Main = ({ children, router }) => {
               url: 'https://tibogoss.github.io/',
               image: 'https://tibogoss.github.io/images/thibaud.jpeg',
               jobTitle: 'AI Research Engineer',
-              description: 'AI Research Engineer specializing in Cheminformatics, Drug Discovery, and Biomedicine',
+              description: 'AI for Drug Discovery and Cheminformatics. MSCA PhD student at AstraZeneca and EPFL',
               alumniOf: [
                 {
                   '@type': 'Organization',

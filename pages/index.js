@@ -35,7 +35,7 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Looking for a Research Engineer position to help saving lives one day!
+        Bridging AI and Chemistry to help saving lives one day!
       </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -44,7 +44,10 @@ const Home = () => (
             Thibaud Southiratn
           </Heading>
           <Text color="teal.500" fontWeight="semibold">
-            MSc. & MEng. (AI / Computer Science / Chem+Bio)
+            MSCA Doctoral Candidate (AI / Drug Discovery)
+          </Text>
+          <Text color="teal.500" fontWeight="semibold">
+            MolecularAI@AstraZeneca - LIAC@EPFL
           </Text>
         </Box>
         <Box
@@ -78,15 +81,11 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
-          Freshly graduated engineer <Text as="span" color="blue.400" fontWeight="semibold">based in Paris</Text> with an interest in leveraging AI for health-related problems.
+          PhD student <Text as="span" color="blue.400" fontWeight="semibold">based in Paris (currently in Sweden)</Text> with an interest in leveraging AI for health-related problems.
           I am driven by the potential of technology to make a positive impact on people&apos;s lives.
-          
-          Working on better ways to identify target/property agnostic - and synthesizable -
-          small molecules.
         </Paragraph>
         <Paragraph>
-          <>Right now, I am a <Text as="span" color="purple.400" fontWeight="semibold">cheminformatics intern </Text> at NovAliX</>, working with the Drug Discovery team. 
-          I am integrating AI-powered tools for ADME prediction and DEL Analysis to streamline the internal R&D pipeline.
+          <>Right now, I am a <Link href="https://lowdataml-dn.com/" target="_blank"><Text as="span" color="purple.400" fontWeight="semibold">MSCA Doctoral Candidate</Text></Link> at AstraZeneca and EPFL</> working on Agentic AI for Drug Discovery.
         </Paragraph>
       </Section>
 
@@ -95,10 +94,12 @@ const Home = () => (
           Bio
         </Heading>
         <BioSection>
+          <BioYear>2026 - Now</BioYear>
+          Conducting doctoral research at <Link href="https://github.com/molecularai" target="_blank">MolecularAI (AstraZeneca)</Link> and <Link href="https://schwallergroup.github.io/" target="_blank">LIAC (EPFL)</Link>, co-supervised by <Link href="https://scholar.google.com/citations?user=s9YsIzYAAAAJ&hl=fr" target="_blank"><Text as="span" color="orange.300" fontWeight="semibold">Samuel Genheden</Text></Link> and <Link href="https://scholar.google.com/citations?user=Tz0I4ywAAAAJ&hl=en&oi=ao" target="_blank"><Text as="span" color="orange.300" fontWeight="semibold">Philippe Schwaller</Text></Link>.
+        </BioSection>
+        <BioSection>
           <BioYear>2021 - 2025</BioYear>
-          Graduating from a dual-degree program with Seoul National University (MSc. at <Link href="https://bhi-kimlab.github.io/" target="_blank"><Text as="span" color="orange.300" fontWeight="semibold">BHI Lab</Text></Link>) and Télécom SudParis (MEng. &quot;Diplôme d&apos;Ingénieur&quot;) in Computer Science.
-          Focused on AI for Biomedicine and Cheminformatics.
-          My thesis work was published in <Text as="span" color="red.500" fontWeight="semibold">ICML&apos;25</Text>.
+          Graduated from a dual-degree program with Seoul National University (<Link href="https://bhi-kimlab.github.io/" target="_blank"><Text as="span" color="orange.300" fontWeight="semibold">BHI Lab</Text></Link>) and Télécom SudParis in Computer Science.
         </BioSection>
         <BioSection>
           <BioYear>2018 - 2021</BioYear>
